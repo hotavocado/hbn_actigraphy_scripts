@@ -80,6 +80,10 @@ downsample <- function(dataset, epoch) {
     summarise(timestamp = timestamp[1],
               ENMO = mean(ENMO, na.rm = T),
               wear = min(wear)) %>%
+              # Takes the minimum value of the binary 'wear' variable and assigns it 
+              # to the entire epoch. This means that if any minute in the epoch contains 
+              # nonwear, the entire epoch will be scored as nonwear. Conversely, the 
+              # only epochs that are scored with wear=1 are those with 100% wear time.
     mutate(minute = (minute + 1) * epoch)
   
   return(dataset)
