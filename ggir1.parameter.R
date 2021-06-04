@@ -95,7 +95,7 @@ g.shell.GGIR(#=======================================
              boutdur.in = c(10,20,30),
              boutdur.lig = c(1,5, 10),
              boutdur.mvpa = c(1,5,10),
-             timewindow = c("WW"),
+             timewindow = c("WW", "MM"),
             # -----------------------------------
             # Report generation
             # -----------------------------------
