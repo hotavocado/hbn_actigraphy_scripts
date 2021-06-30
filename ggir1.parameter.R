@@ -6,7 +6,7 @@ library(GGIR)
 
 ################################################################################################################################
  
-myshell<-function(studyname,datadir,outputdir,mode=c(1,2,3,4,5),f0=0,f1=c(),desiredtz = "Etc/GMT+5"){ 
+myshell<-function(studyname,datadir,outputdir,mode=c(1,2,3,4,5),f0=0,f1=c(),desiredtz = "America/New York"){ 
  
 g.shell.GGIR(#=======================================
              # INPUT NEEDED:
