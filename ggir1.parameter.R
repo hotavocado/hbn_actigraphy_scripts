@@ -44,7 +44,7 @@ g.shell.GGIR(#=======================================
              maxdur = 0,    # for strategy = 1, changed from NIMH script
              includedaycrit = 16,
              winhr = c(5,10),
-             epochvalues2csv=FALSE,
+             epochvalues2csv=TRUE,
              L5M5window = c(0,24),
              M5L5res = 10,
              qlevels = c(c(1380/1440),c(1410/1440)),
